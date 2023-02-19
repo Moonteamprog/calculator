@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s all;
+}
+
+body {
+    background-color: #eaeaea;
+    padding-bottom: 80px;
+}
+
+#all {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 50px;
+    min-height: 200px;
+    background-color: #252525;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
+#save {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 50px;
+    background-color: #eaeaea15;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+#save .numbers {
+    background-color: #252525;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 40px 40px;
+    padding: 1px 10px 1px 10px;
+    gap: 10px;
+    font-size: 30px;
+    color: #eaeaea;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rotat90 {
+    transform: rotate(90deg);
+}
+
+#save .numbers svg {
+    width: 34px;
+    margin: 3px;
+}
+
+#numbers {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    user-select: none;
+    text-align: center;
+}
+
+#evil_math {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: #eaeaea;
+    height: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#numbers .btn {
+    background-color: #eaeaea;
+    border: solid 1px #1e2aae;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+}
+
+#numbers_bottom {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+}
+.btn2 {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    text-align: center;
+}
+.btn2 .btn {
+    background-color: #eaeaea;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#eq {
+    background-color: #3e3aee;
+    color: #aeaeae;
+    font-size: 35px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.but:hover ,#numbers .btn:hover {
+    background-color: #1e2aae22;
+    color: #8483f1;
+}
+
+.but:active , #eq:active ,#numbers .btn:active {
+    background-color: #252525;
+    color: #8483f1;
+}
+
+h6 {
+    color: #252525;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    color: #1e2aae;
+}
+
+@media screen and ( max-width: 800px ) {
+    #all {
+        width: 90%;
+    }
+    #save {
+        width: 100%;
+        font-size: 22px;
+    }
+    #save .numbers {
+        font-size: 22px;
+        height: 40px;
+    }
+    #save .numbers svg {
+        width: 25px;
+        gap: 3px;
+    }
+}
+@media screen and ( max-width: 500px ) {
+    body{
+        background-color: #252525;
+    }
+    #all {
+        margin-top: 0px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .but:hover ,#numbers .btn:hover {
+        background-color: #eaeaea;
+        color: #252525;
+    }
+    .but:active ,#numbers .btn:active {
+        background-color: #1e2aae22;
+        color: #8483f1;
+    }
+    #save {
+        width: 90%;
+        font-size: 11px;
+    }
+    #save .numbers {
+        font-size: 11px;
+        height: 20px;
+    }
+    #save .numbers svg {
+        width: 15px;
+        gap: 3px;
+    }
+    h6 {
+        color: #eaeaea;
+    }
+    a {
+        color: #434fcf;
+    }
+}
